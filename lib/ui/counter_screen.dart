@@ -46,7 +46,9 @@ class _CounterScreenState extends State<CounterScreen> {
               ),
             ),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                context.read<CounterBloc>().add(CounterIncrementPressedEvent());
+              },
               child: Text(
                 '+',
                 style: TextStyle(fontSize: 24),
