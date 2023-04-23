@@ -7,3 +7,7 @@ class CounterInitPrimaryState extends CounterState {
   CounterInitPrimaryState(this.counter);
 }
 
+class CounterUpdated extends CounterState{
+  int counter ;
+  CounterUpdated(this.counter);
+}
